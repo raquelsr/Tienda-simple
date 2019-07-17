@@ -1,0 +1,20 @@
+Realiza una clase tienda que tenga al menos los siguientes atributos:
+
+	Nombre
+	Productos			
+	Empleados		
+	Horario		
+	Clientes
+
+Los Empleados y Clientes heredarán de Persona, a su vez los empleados podrán tener clases hijo:
+	
+	Dependiente
+	Vigilante
+	Encargado
+
+Cada uno con sus distintas funciones.
+ 
+Haz que la tienda tenga un poco de vida. Por ejemplo pide a un empleado que te busque una camiseta o que te cobre un producto :)
+
+Clases JS y luego desde la consola que podamos crear empleados, clientes... las acciones basta con que dejen un console log
+la idea es que tengas un fichero JS que luego nos permita en la consola de chrome el ir creando tiendas, empleados y clientes, no hace falta HTML y CSS

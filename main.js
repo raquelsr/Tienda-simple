@@ -19,7 +19,7 @@ class Tienda {
     }
   
     hireEmployee(person, type) {
-        let employee;
+        /*let employee;
         switch (type) {
             case 'dependent':
                 employee = new Dependent(person);
@@ -35,11 +35,23 @@ class Tienda {
                 break;
       }
       this.employees.push(employee);
+      return employee;*/
+
+      // REFACTOR SWITCH: En este caso habría que hacer tres tests por cada caso del switch, 
+      // es mejor crear un objeto y dependiendo del tipo realizar un new de ese tipo.
+
+      const position = {
+          dependent : Dependent,
+          guard: Guard,
+          manager: Manager
+      }
+      const employee = new position[type](person);
+      this.employees.push(employee);
       return employee;
     }
   
     addClient(person) {
-      let client = new Client(person);
+      const client = new Client(person);
       this.clients.push(client);
       return client;
     }
