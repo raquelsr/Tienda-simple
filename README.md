@@ -1,3 +1,3 @@
 # Tienda-simple
 
-Ejercicio básico de prueba para tocar clases JS.
+Ejercicio básico de prueba para trabajar con clases JS.
